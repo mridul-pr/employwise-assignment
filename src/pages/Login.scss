@@ -1,0 +1,76 @@
+@use "../styles/colors" as *;
+
+.login-container {
+  width: clamp(280px, 40vw, 400px);
+  margin: clamp(40px, 15dvh, 80px) auto;
+  padding: clamp(16px, 4vw, 24px);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background: $white-color;
+  text-align: center;
+
+  h2 {
+    margin-bottom: clamp(12px, 2vw, 20px);
+    font-size: clamp(20px, 2.5vw, 24px);
+    color: #333;
+  }
+
+  .form-group {
+    width: 100%;
+    margin-bottom: clamp(10px, 2vw, 15px);
+    text-align: left;
+
+    label {
+      font-size: clamp(12px, 1.5vw, 14px);
+      font-weight: bold;
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    input {
+      padding: clamp(6px, 1.5vw, 8px);
+      width: 100%;
+      font-size: clamp(14px, 1.5vw, 16px);
+      border: 1px solid $black-color;
+      border-radius: 5px;
+      outline: none;
+      transition: border-color 0.3s ease;
+
+      &:focus {
+        border-color: $primary-color;
+      }
+
+      &:has(:invalid) {
+        border-color: $error-color;
+      }
+    }
+  }
+
+  button {
+    width: 100%;
+    padding: clamp(8px, 2vw, 12px);
+    background-color: $primary-color;
+    color: white;
+    font-size: clamp(14px, 2vw, 16px);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: darken($primary-color, 10%);
+    }
+
+    &:disabled {
+      background-color: #ccc;
+      cursor: not-allowed;
+    }
+  }
+
+  .error {
+    color: $error-color;
+    font-size: clamp(10px, 1.2vw, 12px);
+    margin-top: 5px;
+  }
+}

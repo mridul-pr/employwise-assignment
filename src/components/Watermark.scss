@@ -1,0 +1,12 @@
+/* src/components/Watermark/Watermark.scss */
+.watermark {
+  position: fixed;
+  bottom: 30px;
+  right: 60px;
+  z-index: 1000;
+  pointer-events: none;
+  opacity: 0.1; /* Increase opacity for better visibility */
+  font-weight: bolder;
+  font-size: 5rem;
+  color: white;
+}
