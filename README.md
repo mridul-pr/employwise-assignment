@@ -1,70 +1,98 @@
-# Getting Started with Create React App
+EmployWise React Project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a React-based web application for EmployWise. It includes user authentication and various reusable components.
 
-## Available Scripts
+NOTE:Ceate the .env in root folder as REACT_APP_API_BASE_URL=https://reqres.in/api
 
-In the project directory, you can run:
+## Tech Stack
 
-### `npm start`
+- **React.js** - Frontend framework
+- **SCSS** - Styling
+- **Axios** - API requests
+- **Formik & Yup** - Form handling and validation
+- **React Router** - Client-side routing
+- **Session Storage** - Authentication token management
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Dependencies
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+The following dependencies are required for this project:
 
-### `npm test`
+| Package                                            | Version               | Purpose                        |
+| -------------------------------------------------- | --------------------- | ------------------------------ |
+| **React.js**                                       | `^19.0.0`             | Core library for building UI   |
+| **React-DOM**                                      | `^19.0.0`             | React integration with the DOM |
+| **React Router DOM**                               | `^7.4.0`              | Client-side routing            |
+| **Axios**                                          | `^1.8.4`              | HTTP requests                  |
+| **SCSS & Sass Loader**                             | `^1.86.0` & `^16.0.5` | Styling with SCSS              |
+| **Formik**                                         | `^2.4.6`              | Form handling                  |
+| **Yup**                                            | `^1.6.1`              | Schema validation              |
+| **React-Paginate**                                 | `^8.3.0`              | Pagination component           |
+| **Testing Library (Jest, DOM, React, User Event)** | Various versions      | Testing utilities              |
+| **Web Vitals**                                     | `^2.1.4`              | Performance metrics            |
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Getting Started
 
-### `npm run build`
+### Prerequisites
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Ensure you have the following installed:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **Node.js** (LTS version recommended)
+- **npm** or **yarn**
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Installation
 
-### `npm run eject`
+Clone the repository:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```sh
+git clone https://github.com/employwise/employwide-assignment.git
+cd employwide-assignment
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Install dependencies:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```sh
+npm install
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Create an `.env` file in the root directory and configure the necessary environment variables (e.g., API base URL):
 
-## Learn More
+```env
+REACT_APP_API_BASE_URL=https://reqres.in/api
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Running the Application
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+To start the development server, run:
 
-### Code Splitting
+```sh
+npm start
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+The app will be available at **http://localhost:3000**.
 
-### Analyzing the Bundle Size
+### Build for Production
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+To create a production-ready build:
 
-### Making a Progressive Web App
+```sh
+npm run build
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Features
 
-### Advanced Configuration
+- **User Authentication** - Login system with session storage
+- **Reusable Components** - Modular design with shared components
+- **SCSS Styling** - Maintainable styles using SCSS
+- **API Integration** - Uses Axios for HTTP requests
+- **Form Validation** - Formik and Yup for handling forms
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## Assumptions & Considerations
 
-### Deployment
+- The application follows a component-driven architecture for scalability.
+- Styling is managed using SCSS with reusable variables and mixins.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## Contact
 
-### `npm run build` fails to minify
+For any issues or improvements, feel free to reach out.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Developed for **EmployWise**.
