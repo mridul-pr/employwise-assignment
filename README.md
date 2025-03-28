@@ -2,6 +2,8 @@ EmployWise React Project
 
 This is a React-based web application for EmployWise. It includes user authentication and various reusable components.
 
+The final website hosted in vercel : https://employwise-assignment-pi.vercel.app/
+
 NOTE:Ceate the .env in root folder as REACT_APP_API_BASE_URL=https://reqres.in/api
 
 ## Tech Stack
