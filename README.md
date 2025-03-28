@@ -44,8 +44,7 @@ Ensure you have the following installed:
 Clone the repository:
 
 ```sh
-git clone https://github.com/employwise/employwide-assignment.git
-cd employwide-assignment
+git clone https://github.com/mridul-pr/employwise-assignment.git
 ```
 
 Install dependencies:
